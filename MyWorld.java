@@ -12,7 +12,7 @@ public class MyWorld extends World
 
     public MyWorld() 
     {
-        super(600, 400, 1);
+        super(600, 400, 1, false);
         
         // create the elephant object
         Elephant elephant = new Elephant();
@@ -25,6 +25,16 @@ public class MyWorld extends World
         createBurger();
     }
 
+    /**
+     * end the game and draw "Game over"
+     */
+    
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label("Game Over...", 100);
+        addObject(gameOverLabel, 300, 200);
+        
+    }
     /**
      * increase score
      */
