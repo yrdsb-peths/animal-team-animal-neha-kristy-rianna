@@ -22,5 +22,8 @@ public class Elephant extends Actor
         {
             move(3);
         }
+        
+        //remove apple if elephant eats it
+        removeTouching(Burger.class);
     }
 }
