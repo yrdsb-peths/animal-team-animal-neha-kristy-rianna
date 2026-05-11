@@ -26,4 +26,14 @@ public class Elephant extends Actor
         //remove apple if elephant eats it
         removeTouching(Burger.class);
     }
+    
+    public void eat()
+    {
+        if(isTouching(Apple.class)
+        {
+            removeTouching(Burger.class);
+            MyWorld world = (MyWorld) getW
+        }
+        
+    }
 }
